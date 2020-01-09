@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/mestyle.css">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../jquery-3.4.1.js"></script>
+</head>
+<body>
+<div class="container header">
+    <div class="menu1">
+        <ul>
+            <li><a href="../">Trang chủ</a></li>
+            <li><a href="index.html">Thông tin</a> </li>
+            <li><a href="index.html">Âm nhạc</a></li>
+            <li><a href="index.html">Sự kiện</a></li>
+            <li><a href="index.html">Hình ảnh</a></li>
+            <li><a href="index.html">Du lịch</a></li>
+            <li><a href="../login">Đăng nhập</a></li>
+        </ul>
+    </div>
+    <div class="menu2">
+        <ul>
+            <li><a href="#" target="_blank"><img src="../image/fb.png" title="Facebook"> Facebook</a></li>
+            <li><a href="#" target="_blank"><img src="../image/twitter.png" title="instagram"> Instagram</a></li>
+        </ul>
+    </div>
+</div>
+<div class="logo-container">
+    <div class="text_logo"><h1>Nguyen Minh Quan Blog</h1></div>
+</div>
+<div class="trong"></div>
+<div class="container content">
+    <div class="row">
+        <div class="content_about col-md-12">
+            <p>Nội dung</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>Cảm ơn bạn đã ghé thăm website của tôi</p>
+        <p>@2019 - Nguyen Minh Quan. All Right Reserved. Designed and Developed by <a id="designweb" style="text-decoration: none" href="http://facebook.com/minhquan.roger" target="_blank">NMQ</a> </p>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>

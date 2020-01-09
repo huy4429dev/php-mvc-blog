@@ -1,0 +1,262 @@
+.header{
+    height: 60px;
+    clear: both;
+    border-bottom: 1px solid rgba(99,89,107,0.79);
+}
+.menu1{
+    float: left;
+    width: 800px;
+    height: 60px;
+}
+.menu1 ul li{
+    position: relative;
+    height: 60px;
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    padding-top: 12px;
+}
+.menu1 ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgba(32,35,70,0.75);
+    font-family: "Times New Roman";
+}
+.menu1 ul li a:hover{
+    color: rgb(191, 159, 90);
+}
+.text_logo{
+    text-align: center;
+}
+.menu2{
+    width: 300px;
+    float: right;
+    height: 60px;
+}
+.menu2 ul li{
+    height: 60px;
+    list-style-type: none;
+    display: block;
+    float: left;
+    padding: 0 2px;
+    padding-top: 12px;
+}
+.menu2 ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(32,35,70,0.75);
+}
+.menu2 ul li a:hover{
+    color: rgb(191, 159, 90);
+}
+.text_logo h1{
+    font-size: 60px;
+    font-family: "Times New Roman";
+    color: rgb(191, 159, 90);
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    clear: both;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text_slide {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.trong{
+    height: 50px;
+    width: 100%;
+}
+.item_noidung{
+    height: auto;
+}
+.item_about{
+    border: solid 2px rgba(32,35,70,0.75) ;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    font-family: "Times New Roman";
+    height: 500px;
+    -webkit-transition: height 3s;
+    transition: height 3s;
+    position: fixed;
+    display: block;
+}
+.item_nho_noidung{
+    font-family: "Times New Roman";
+    text-align: left;
+    height: 400px;
+}
+#image_content{
+    opacity: 0.5;
+    border: 0.1px solid darkgrey;
+    padding: 10px;
+    width: 350px;
+    height: 190px;
+}
+#image_content:hover{
+    opacity: 1;
+}
+.item_nho_noidung h4{
+    color: rgba(32,35,70,0.75);
+}
+.item_about h4{
+    padding-top: 5px;
+    height: 40px;
+    text-align: center;
+    color: rgb(191, 159, 90);
+    border-bottom: solid 2px rgba(32,35,70,0.75);
+}
+#image_about{
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(32,35,70,0.75); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.footer{
+    font-size: 20px;
+    font-family: "Times New Roman";
+    text-align: center;
+    background: rgba(32,35,70,0.75);
+    height: 100px
+}
+#designweb{
+    color: rgb(191, 159, 90);
+}
+#designweb:hover{
+    color: rgba(32,35,70,0.75);
+}
+.contents{
+    font-family: "Times New Roman";
+    color: rgb(191, 159, 90);
+    height: 40px;
+    border-bottom: solid 3px rgb(191, 159, 90);
+}
+.login_fixed{
+    width: 190px;
+    height: 250px;
+    right: 0;
+    top: 20px;
+    position: fixed;
+    display: table;
+    background: rgb(191, 159, 90);
+    border:solid 1px white;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+}
+#input{
+    background: white;
+    color: rgb(191, 159, 90);
+}
+#input:hover{
+    background: rgb(191, 159, 90);
+    color: white;
+}

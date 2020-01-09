@@ -1,0 +1,70 @@
+.login{
+    height: 300px;
+    background: rgba(32,35,70,0.75);
+}
+.login table{
+    text-align: center;
+    width: 400px;
+    margin-left: 340px;
+}
+#submit{
+    padding-bottom: 5px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: white;
+    background: rgba(32,35,70,0.75);
+    border:solid 4px;
+    -moz-border-radius: 38px;
+    -webkit-border-radius: 38px;
+    border-radius: 38px;
+}
+#submit:hover{
+    color: rgba(32,35,70,0.75);
+    background: white;
+}
+#uername{
+    color: rgb(191, 159, 90);
+    border:solid 1px rgba(32,35,70,0.75);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+#password{
+    color: rgb(191, 159, 90);
+    border:solid 1px rgba(32,35,70,0.75);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+label{
+    color: rgb(191, 159, 90);
+    font-size: 22px;
+}
+.login_quick{
+    border:solid 0px rgba(32,35,70,0.75);
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    width: 350px;
+    height: 180px;
+    background: rgba(32,35,70,0.75);
+}
+.logo{
+    background: rgba(32,35,70,0.75);
+}
+.menu1 ul li> .login_quick{
+    display: none;
+    position: absolute;
+}
+.menu1 ul li:hover .login_quick{
+    display: block;
+}
+.menu1 ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(32,35,70,0.75);
+}
+.menu1 ul li a:hover{
+    color: rgb(191, 159, 90);
+}
