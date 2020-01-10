@@ -200,3 +200,10 @@ function toSlug($title)
     $map = array_merge($map, $default);
     return strtolower(preg_replace(array_keys($map), array_values($map), $title));
 }
+
+function adminUrl($controller, $action){
+    return BASE_URL.'index.php?adminController='.$controller.'&action='.$action;
+}
+function pageUrl($controller, $action){
+    return BASE_URL.'index.php?pageController='.$controller.'&action='.$action;
+}

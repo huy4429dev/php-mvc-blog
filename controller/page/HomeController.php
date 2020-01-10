@@ -9,7 +9,6 @@ class HomeController extends Controller
         /**
          *  Get all Post 
          */
-
         $posts = Post::orderBy('posts', 'id', 'desc')
             ->take(4)
             ->get();

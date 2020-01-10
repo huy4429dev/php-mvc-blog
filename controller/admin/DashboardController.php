@@ -7,3 +7,4 @@ class DashboardController extends Controller{
         $this->loadView('page-admin/dashboard');
     }
 }
+
