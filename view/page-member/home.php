@@ -66,12 +66,12 @@
                     <?php foreach($posts as $post): ?>
                     <div class="item_nho_noidung col-md-6">
                         <h4><?php echo($post->title) ?></h4>
-                        <a href="#"><img src="<?php echo (asset("uploads/images/$post->image")) ?>" title="Hà Nội năm 2016" id="image_content"></a>
+                        <a href="<?php echo(pageUrl('PostController',"detail&id=$post->id")) ?>"><img src="<?php echo (asset("uploads/images/$post->image")) ?>" title="Hà Nội năm 2016" id="image_content"></a>
                         <p>
                            <?php echo($post->description) ?>
                         </p>
                         <p>
-                            <a href="#">Đọc thêm...</a>
+                            <a href="<?php echo(pageUrl('PostController',"detail&id=$post->id")) ?>">Đọc thêm...</a>
                         </p>
                     </div>
                     <?php endforeach ?>

@@ -77,7 +77,7 @@ class Database
             $sql       = "INSERT INTO $table($dataKey) VALUES($dataValue) ";
             $created = $this->kn->query($sql);
             if ($created) {
-                return 'Thêm mới thành công';
+                return true;
             } else {
                 return 'Thêm mới thất bại';
             }
@@ -97,7 +97,7 @@ class Database
             $sql       = "UPDATE $table SET $dataUpdate WHERE id = '$id'";
             $updated = $this->kn->query($sql);
             if ($updated) {
-                return 'Cập nhật thành công';
+                return true;
             } else {
                 return 'Cập nhật thất bại';
             }
@@ -132,7 +132,7 @@ class Database
             $sql = "DELETE FROM $table WHERE $where[0] = '$id'";
             $deleted = $this->kn->query($sql);
             if ($deleted) {
-                return 'Xóa thành công ';
+                return true ;
             } else {
                 return 'Xóa thất bại';
             }
@@ -141,7 +141,7 @@ class Database
             $sql = "DELETE FROM $table WHERE id = '$id'";
             $deleted = $this->kn->query($sql);
             if ($deleted) {
-                return 'Xóa thành công ';
+                return true;
             } else {
                 return 'Xóa thất bại';
             }

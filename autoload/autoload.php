@@ -7,7 +7,7 @@ include('./config/config.php');
 include('./helper/Helper.php');
 
 $loadHelperClass = [
-    'Database','Input', 'Session'
+    'Database','Input', 'Session', 'Redirect'
 ];
 
 foreach($loadHelperClass as $helper){
@@ -25,6 +25,9 @@ foreach($loadHelperClass as $helper){
 /**
  * Load all Model
  */
+$models = [ 
+    'Model','User','Post','Category','Contact','PhotoGallery','Comment'
+];
 
 foreach ($models as $model) {
     if (file_exists('./model/' . $model . '.php')) {

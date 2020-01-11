@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="<?php echo (asset('admin-template/bower_components/bootstrap-daterangepicker/daterangepicker.css')) ?>">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="<?php echo (asset('admin-template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')) ?>">
-    <script src="<?php echo(asset('ckeditor/ckeditor.js'))?>"></script>
+    <script src="<?php echo (asset('ckeditor/ckeditor.js')) ?>"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -351,15 +351,15 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="<?php echo (adminUrl('ContactController', 'index')) ?>">
                             <i class="fa fa-folder"></i>
                             <span>Liên hệ</span>
                             <span class="pull-right-container">
                             </span>
                         </a>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
+                    <li >
+                        <a href="<?php echo (adminUrl('PhotoGalleryController', 'index')) ?>">
                             <i class="fa fa-folder"></i>
                             <span>Hình ảnh</span>
                             <span class="pull-right-container">
@@ -424,15 +424,15 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="<?php echo (adminUrl('ContactController', 'index')) ?>">
                             <i class="fa fa-folder"></i>
                             <span>Liên hệ</span>
                             <span class="pull-right-container">
                             </span>
                         </a>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
+                    <li >
+                        <a href="<?php echo (adminUrl('PhotoGalleryController', 'index')) ?>">
                             <i class="fa fa-folder"></i>
                             <span>Hình ảnh</span>
                             <span class="pull-right-container">

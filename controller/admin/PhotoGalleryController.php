@@ -2,15 +2,15 @@
 
 include('./controller/Controller.php');
 
-class PostController extends Controller
+class PhotoGalleryController extends Controller
 {
     public function index()
     {
-        $post  = new post();
-        $posts = $post->paginate('posts', 4);
-        $links = $post->links('posts', 4, adminUrl('postController', 'index'));
-        $this->loadView('page-admin/post/index', [
-            'posts' => $posts,
+        $photo  = new PhotoGallery();
+        $photos = $photo->paginate('photos', 4);
+        $links = $photo->links('photo_gallery', 4, adminUrl('PhotoGalleryController', 'index'));
+        $this->loadView('page-admin/photo-gallery/index', [
+            'photos' => $photos,
             'links' => $links,
         ]);
     }
@@ -19,7 +19,7 @@ class PostController extends Controller
     {
         $category   = new Category();
         $categories = $category->all('categories');
-        $this->loadView('page-admin/post/create', [
+        $this->loadView('page-admin/photo/create', [
             'categories' => $categories
         ]);
     }
@@ -27,7 +27,7 @@ class PostController extends Controller
     public function store()
     {
 
-        $post = new post();
+        $photo = new PhotoGallery();
         $data = Input::all();
         if (isset($_FILES['image'])) {
             $file_name = rand(100, 10000) . '-' . $_FILES['image']['name'];
@@ -40,7 +40,7 @@ class PostController extends Controller
                 move_uploaded_file($file_tmp, $part . $file_name);
             }
         }
-        $created  = $post->insert('posts', $data);
+        $created  = $photo->insert('photos', $data);
 
         if ($created === true) {
             Session::put('success', true);
@@ -53,13 +53,13 @@ class PostController extends Controller
 
     public function edit()
     {
-        $idpost     = Input::get('id');
-        $post       = new post();
+        $idphoto     = Input::get('id');
+        $photo       = new PhotoGallery();
         $category   = new Category();
         $categories = $category->all('categories');
-        $post       = $post->find('posts', $idpost);
-        $this->loadView('page-admin/post/edit', [
-            'post'       => $post,
+        $photo       = $photo->find('photos', $idphoto);
+        $this->loadView('page-admin/photo/edit', [
+            'photo'       => $photo,
             'categories' => $categories
         ]);
     }
@@ -67,8 +67,8 @@ class PostController extends Controller
 
     public function update()
     {
-        $idpost = Input::get('id');
-        $post   = new post();
+        $idphoto = Input::get('id');
+        $photo   = new PhotoGallery();
         $data   = Input::all();
 
         if (isset($_FILES['image'])) {
@@ -82,10 +82,10 @@ class PostController extends Controller
                 move_uploaded_file($file_tmp, $part . $file_name);
             }
         } else {
-            $data['image'] = $post->image;
+            $data['image'] = $photo->image;
         }
 
-        $updated  = $post->update('posts', $data,  $idpost);
+        $updated  = $photo->update('photos', $data,  $idphoto);
 
         if ($updated === true) {
             Session::put('success', true);
@@ -98,9 +98,9 @@ class PostController extends Controller
 
     public function destroy()
     {
-        $idpost = Input::get('id');
-        $post = new post();
-        $deleted  = $post->delete('posts', $idpost);
+        $idphoto = Input::get('id');
+        $photo = new PhotoGallery();
+        $deleted  = $photo->delete('photos', $idphoto);
 
         if ($deleted === true) {
             Session::put('success', true);

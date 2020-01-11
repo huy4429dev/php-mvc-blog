@@ -13,12 +13,12 @@
         <div class="container header">
                 <div class="menu1">
                     <ul>
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="post">Thông tin</a> </li>
+                        <li><a href="<?php echo(pageUrl('HomeController','index')) ?>">Trang chủ</a></li>
+                        <li><a href="post">Giới thiệu</a> </li>
                         <li><a href="post">Âm nhạc</a></li>
                         <li><a href="post">Sự kiện</a></li>
                         <li><a href="post">Hình ảnh</a></li>
-                        <li><a href="post">Contact</a></li>
+                        <li><a href="post">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="menu2">

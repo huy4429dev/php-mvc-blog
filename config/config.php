@@ -9,6 +9,6 @@
     const BASE_URL = 'http://localhost:8080/php-mvc-blog/';
 
     $models = [ 
-        'Model','User','Post','Category',
+        'Model','User','Post','Category','Contact','PhotoGallery','Comment'
     ];
 ?>

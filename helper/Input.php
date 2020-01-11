@@ -6,7 +6,7 @@
         }
     
         public static function get($name){
-            return $_GET[$name];
+            return $_GET[$name] ?? null;
         }
          
         
@@ -14,5 +14,8 @@
             return $_POST[$name];
         }
         
+        public static function all(){
+            return $_POST;
+        }
         
     }
